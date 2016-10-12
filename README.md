@@ -1,2 +1,2 @@
 # DataScienceLiveAssignment06 
-###### with Ramesh
+###### contributed by Ramesh, Alexandra and Gino
