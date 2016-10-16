@@ -2,6 +2,10 @@
 # Live Assignment 06
 # Part 04
 
+#required Cleanup_03.R
+source("~/Github/DataScienceLiveSessionAssignment06/Analysis/Data/Cleanup_03.R",echo=FALSE)
+
+
 #Cleanng up manhattan file and setting the data for analysis "Cleanup_04.R"
 
 #plot gross sqft to price

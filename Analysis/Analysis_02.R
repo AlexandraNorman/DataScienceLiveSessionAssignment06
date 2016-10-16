@@ -2,6 +2,10 @@
 # Live Assignment 06
 # Analysis of the condos home data set
 
+#required Cleanup_04.R
+source("~/Github/DataScienceLiveSessionAssignment06/Analysis/Data/Cleanup_04.R", echo=FALSE)
+source("~/Github/DataScienceLiveSessionAssignment06/Analysis/getmode.R",echo = FALSE)
+
 #get diminsions of the CONDOS dataset 
 dim(mn.condos)
 

@@ -2,6 +2,10 @@
 # Live Assignment 06
 # Analysis of the family (1 to 3 bedrooms) home data set
 
+#required Cleanup_04.R
+source("~/Github/DataScienceLiveSessionAssignment06/Analysis/Data/Cleanup_04.R", echo=FALSE)
+source("~/Github/DataScienceLiveSessionAssignment06/Analysis/getmode.R",echo = FALSE)
+
 # 5 number summary of gross sqft
 summary(mn.homes$gross.sqft)
 

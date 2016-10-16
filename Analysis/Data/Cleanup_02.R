@@ -2,6 +2,9 @@
 # Live Assignment 06
 # Part 2
 
+#required Cleanup_01.R
+source("~/Github/DataScienceLiveSessionAssignment06/Analysis/Data/Cleanup_01.R",echo=FALSE)
+
 #Cleanng up manhattan file and setting the data for analysis "Cleanup_02.R"
 
 #covering all variable names to lower case
