@@ -20,6 +20,10 @@ qqplot(log10(mn.sale$gross.sqft), log10(mn.sale$sale.price.n))
 
 #Creating a new data set, limiting to family homes from the list.
 mn.homes <- mn.sale[which(grepl("FAMILY",mn.sale$building.class.category)),]
+mn.homes$Price.per.gross.sqft <- mn.homes$sale.price.n/mn.homes$gross.sqft
+mn.homes$Price.per.land.sqft <- mn.homes$sale.price.n/mn.homes$land.sqft
+mn.homes$Price.per.gross.sqft <- replace(mn.homes$Price.per.gross.sqft, which(is.na(mn.homes$Price.per.gross.sqft)),0)
+mn.homes$Price.per.land.sqft <- replace(mn.homes$Price.per.land.sqft, which(is.na(mn.homes$Price.per.land.sqft)),0)
 dim(mn.homes)
 
 #reviewed the data set and it contained outliers, 

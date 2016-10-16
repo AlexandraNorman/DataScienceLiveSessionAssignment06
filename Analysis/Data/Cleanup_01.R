@@ -34,6 +34,7 @@ str(mn)
 #empty cells are returned as NA, thousand separators "," are removed from numeric
 mn$SALE.PRICE.N <- as.numeric(gsub("[^[:digit:]]","",mn$SALE.PRICE))
 
+
 #writing out intermediate cleanedup file
 write.csv(mn,file="rollingsales_manhattan_salespriceN.csv")
 

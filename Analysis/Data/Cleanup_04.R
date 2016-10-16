@@ -20,6 +20,8 @@ qqplot(log10(mn.sale$gross.sqft), log10(mn.sale$sale.price.n))
 
 #Creating a new data set, limiting to family homes from the list.
 mn.condos <- mn.sale[which(grepl("CONDOS",mn.sale$building.class.category)),]
+
+
 dim(mn.condos)
 
 #reviewed the data set and it contained outliers, 
