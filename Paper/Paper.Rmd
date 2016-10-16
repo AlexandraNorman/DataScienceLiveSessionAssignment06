@@ -1,0 +1,74 @@
+---
+title: "Paper"
+author: "Ramesh, Alexandra and Gino"
+date: "October 16, 2016"
+output: 
+    html_document:
+        keep_md:  true
+---
+
+```{r Analysis_01, include=FALSE, echo=FALSE, cache=TRUE}
+source ("~/Github/DataScienceLiveSessionAssignment06/Analysis/Analysis_01.R")
+```
+
+```{r Analysis_02, include=FALSE, echo=FALSE, cache=TRUE}
+source ("~/Github/DataScienceLiveSessionAssignment06/Analysis/Analysis_02.R")
+```
+
+## Overview
+
+The purpose of this project is to download,read in building sales of borough manhatten and examine the sales data set. To further understand the data we split the data into building that we are going to perform our analysis ex. Family and Condos   
+
+## Family   
+
+Here was extracted builidings that are 1,2,3 bedroom family homes, we cleaned up the data to perform analysis on columns that have gross sqaure feet, land square feet and price data avialble.
+
+* Below is the dimensions and a summary of the data set
+
+```{r summary, cache=TRUE}
+dim(mn.homes)
+str(mn.homes)
+```
+
+* 5 Number summary on Sales Price, Gross Square Feet and Land Square Feet
+```{r 5summary, cache=TRUE}
+summary(mn.homes$sale.price.n)
+summary(mn.homes$gross.sqft)
+summary(mn.homes$land.sqft)
+```
+
+## Sale Price vs Gross Square feet 
+
+
+```{r salesvsgross, cache=TRUE, echo=FALSE}
+plot(mn.homes$gross.sqft, mn.homes$sale.price.n/1000000, type="p", main = "Sale Price vs. Gross Square feet", xlab = "Gross Square Feet", ylab = "Sale Price in millions")
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+## Sale Price vs Land Square feet 
+
+
+```{r salesvsland, cache=TRUE, echo=FALSE}
+plot(mn.homes$land.sqft, mn.homes$sale.price.n/1000000, type="p", main = "Sale Price vs. Land Square feet", xlab = "Land Square Feet", ylab = "Sale Price in millions")
+```
+
+Note: From the plot, it makes sense, houses with a backyard is limited in Manhattan, mostly between 1000 to 4000 sqft.
+
+## Condos  
+
+Here was extracted builidings that are Condos, we cleaned up the data to perform analysis on columns that have gross sqaure feet, land square feet and price data avialble. However condos data set did not have information on gross sqaure feet and land square feet therefore they where excluded from our analysis
+
+* Below is the dimensions and a summary of the data set
+
+```{r summarycondos, cache=TRUE}
+dim(mn.condos)
+str(mn.condos)
+```
+
+* 5 Number summary on Sales Price
+```{r 5summarycondos, cache=TRUE}
+summary(mn.condos$sale.price.n)
+```
+
