@@ -55,3 +55,20 @@ plot(mn.homes$land.sqft, mn.homes$sale.price.n/1000000, type="p", main = "Sale P
 ```
 
 Note: From the plot, it makes sense, houses with a backyard is limited in Manhattan, mostly between 1000 to 4000 sqft.
+
+## Condos  
+
+Here was extracted builidings that are Condos, we cleaned up the data to perform analysis on columns that have gross sqaure feet, land square feet and price data avialble. However condos data set did not have information on gross sqaure feet and land square feet therefore they where excluded from our analysis
+
+* Below is the dimensions and a summary of the data set
+
+```{r summarycondos, cache=TRUE}
+dim(mn.condos)
+str(mn.condos)
+```
+
+* 5 Number summary on Sales Price
+```{r 5summarycondos, cache=TRUE}
+summary(mn.condos$sale.price.n)
+```
+
