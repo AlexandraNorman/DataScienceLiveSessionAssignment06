@@ -1,5 +1,5 @@
 # Paper
-Ramesh, Alexandra and Gino  
+by Ramesh, Alexandra and Gino  
 October 16, 2016  
 
 
@@ -361,5 +361,15 @@ plot(log10(mn.rentals$land.sqft), log10(mn.rentals$sale.price.n), ylab = "Log of
 
 ![](Paper_files/figure-html/salesvsland_r-1.png)<!-- -->
 
+Note:         
+The Manhattan data analysis exercise provided a good understanding into basic capability of R to perform data cleaning, creating tidy data, and data analysis of various data points for meaningful insights. The Manhattan data set included various real estate class such as FAMILY, RENTAL, CONDOS, and much more, and the asset sizes in square footages, sale prices, and other demographic information. In this exercise, we have performed some basic analysis of selective classes of FAMILY, RENTAL and CONDOS in correlation with size and sale prices as below.   
+ 
+For building class “FAMILY”:       
 
-Note: Conclusion here
+* We have observed strong correlation between sale price and gross square feet between 2000 and 5000 square foot homes – higher the square footage and higher the sale price. The mean square footage was 3886. However, there is no conclusive evidence of very strong correlation for the houses beyond 5000 square foot – this will require a more in depth analysis on condition of the home, year of sale and other variables.          
+* The histogram and summary functions on square footage shows 2/3rds of houses are within 2000 and 5000 square foot.          
+* The histogram and summary functions on sale prices shows 2/3rds of the houses are between $2M and $8M, with a mean of $6028000        
+* The histogram on sale price per gross square foot shows, 80% homes are <$2000 sq.ft      
+
+
+Similar conclusion can be drawn with RENTAL and CONDOS.
